@@ -19,6 +19,13 @@ export default function Categories({ categories }) {
                     Add New blog
                 </NavLink>
             </li>
+
+            <ul>
+                <NavLink className="link" to={'/login'}>
+                    Login
+                </NavLink>
+            </ul>
+
         </ul>
     )
 }

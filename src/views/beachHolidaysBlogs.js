@@ -9,7 +9,7 @@ export default function BeachHolidaysBlogs({holidaysBlogs}) {
     } 
     const li_beachHolidaysBlogs = holidaysBlogs.map((blog) => {
         
-        const blog_to = "/beach-holidays/" + blog.id;
+        const blog_to = "/frontend-blog-project/beach-holidays/" + blog.id;
         return (
             <section className="preview" key={blog.id}>
                 <h4>{blog.title}</h4>

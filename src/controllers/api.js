@@ -1,4 +1,4 @@
-const url = 'http://localhost:8080' //for mock objects
+const url = 'https://blog-project-tilo-justin.herokuapp.com' //for mock objects
 
 async function getCategories() {
     const response = await fetch(url + '/categories')

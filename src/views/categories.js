@@ -20,11 +20,11 @@ export default function Categories({ categories }) {
                 </NavLink>
             </li>
 
-            <ul>
+            <li>
                 <NavLink className="link" to={'/login'}>
                     Login
                 </NavLink>
-            </ul>
+            </li>
 
         </ul>
     )

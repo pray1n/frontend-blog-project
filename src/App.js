@@ -31,6 +31,7 @@ function App() {
     async function readData() {
         const blogs = await getBlogs()
         const categories = await getCategories()
+        const routeurl = '/frontend-blog-project'
         const specialblogs = blogs.filter((blog) => {
             return blog.special === true
         })
@@ -85,7 +86,7 @@ function App() {
                 <main>
                     <Routes>
                         <Route
-                            path="/all-inclusive"
+                            path="${routeurl}/all-inclusive"
                             element={
                                 <AllInclusiveBlogs
                                     allInclusiveBlogs={data.allInclusiveBlogs}
@@ -93,11 +94,11 @@ function App() {
                             }
                         />
                         <Route
-                            path="/all-inclusive/:id"
+                            path="${routeurl}/frontend-blog-project/all-inclusive/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/beach-holidays"
+                            path="${routeurl}/beach-holidays"
                             element={
                                 <BeachHolidaysBlogs
                                     holidaysBlogs={data.holidaysBlogs}
@@ -105,11 +106,11 @@ function App() {
                             }
                         />
                         <Route
-                            path="/beach-holidays/:id"
+                            path="${routeurl}/beach-holidays/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/city-tours"
+                            path="${routeurl}/city-tours"
                             element={
                                 <CityToursBlogs
                                     cityToursBlogs={data.cityToursBlogs}
@@ -117,23 +118,23 @@ function App() {
                             }
                         />
                         <Route
-                            path="/city-tours/:id"
+                            path="${routeurl}/city-tours/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/"
+                            path="${routeurl}/"
                             element={<Blogs blogs={data.nonspecialblogs} />}
                         />
                         <Route
-                            path="/:id"
+                            path="${routeurl}/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/newblog"
+                            path="${routeurl}/newblog"
                             element={<NewBlog addBlog={addBlog} />}
                         />
                         <Route
-                            path="/login"
+                            path="${routeurl}/login"
                             element={<NewBlog addBlog={addBlog} />}
                         />
                     </Routes>

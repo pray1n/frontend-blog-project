@@ -31,7 +31,6 @@ function App() {
     async function readData() {
         const blogs = await getBlogs()
         const categories = await getCategories()
-        const routeurl = '/frontend-blog-project'
         const specialblogs = blogs.filter((blog) => {
             return blog.special === true
         })
@@ -122,7 +121,7 @@ function App() {
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path= '/frontend-blog-project'
+                            path="/frontend-blog-project"
                             element={<Blogs blogs={data.nonspecialblogs} />}
                         />
                         <Route

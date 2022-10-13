@@ -6,7 +6,7 @@ import Blogs from './views/blogs'
 import SpecialBlogs from './views/specialblogs'
 import AllInclusiveBlogs from './views/allInclusiveBlogs'
 import BeachHolidaysBlogs from './views/beachHolidaysBlogs'
-import CityToursBlogs from './views/city-tours.js'
+import CityToursBlogs from './views/city-tours'
 
 import NewBlog from './views/NewBlog'
 import Blogdetail from './views/blogs_detail'

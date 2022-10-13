@@ -125,7 +125,7 @@ function App() {
                             element={<Blogs blogs={data.nonspecialblogs} />}
                         />
                         <Route
-                            path='/frontend-blog-project/:id'
+                            path='/frontend-blog-project/blog/:id'
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route

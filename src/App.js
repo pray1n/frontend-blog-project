@@ -132,10 +132,10 @@ function App() {
                             path="/newblog"
                             element={<NewBlog addBlog={addBlog} />}
                         />
-                        <Route
+                        {/* <Route
                             path="/login"
                             element={<NewBlog addBlog={addBlog} />}
-                        />
+                        /> */}
                     </Routes>
                 </main>
                 <aside>

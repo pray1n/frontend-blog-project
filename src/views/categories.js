@@ -15,13 +15,13 @@ export default function Categories({ categories }) {
         <ul>
             {li_categories}
             <li>
-                <NavLink className="link" to={'/newblog'}>
+                <NavLink className="link" to={'/frontend-blog-project/newblog'}>
                     Add New blog
                 </NavLink>
             </li>
 
             <li>
-                <NavLink className="link" to={'/login'}>
+                <NavLink className="link" to={'/frontend-blog-project/login'}>
                     Login
                 </NavLink>
             </li>

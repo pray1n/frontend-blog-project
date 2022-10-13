@@ -85,7 +85,7 @@ function App() {
                 <main>
                     <Routes>
                         <Route
-                            path="/all-inclusive"
+                            path="/frontend-blog-project/all-inclusive"
                             element={
                                 <AllInclusiveBlogs
                                     allInclusiveBlogs={data.allInclusiveBlogs}
@@ -93,11 +93,11 @@ function App() {
                             }
                         />
                         <Route
-                            path="/all-inclusive/:id"
+                            path="/frontend-blog-project/frontend-blog-project/all-inclusive/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/beach-holidays"
+                            path="/frontend-blog-project/beach-holidays"
                             element={
                                 <BeachHolidaysBlogs
                                     holidaysBlogs={data.holidaysBlogs}
@@ -105,11 +105,11 @@ function App() {
                             }
                         />
                         <Route
-                            path="/beach-holidays/:id"
+                            path="/frontend-blog-project/beach-holidays/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/city-tours"
+                            path="/frontend-blog-project/city-tours"
                             element={
                                 <CityToursBlogs
                                     cityToursBlogs={data.cityToursBlogs}
@@ -117,25 +117,25 @@ function App() {
                             }
                         />
                         <Route
-                            path="/city-tours/:id"
+                            path="/frontend-blog-project/city-tours/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/"
+                            path="/frontend-blog-project"
                             element={<Blogs blogs={data.nonspecialblogs} />}
                         />
                         <Route
-                            path="/:id"
+                            path="/frontend-blog-project/:id"
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/newblog"
+                            path="/frontend-blog-project/newblog"
                             element={<NewBlog addBlog={addBlog} />}
                         />
-                        {/* <Route
-                            path="/login"
+                        <Route
+                            path="/frontend-blog-project/login"
                             element={<NewBlog addBlog={addBlog} />}
-                        /> */}
+                        />
                     </Routes>
                 </main>
                 <aside>

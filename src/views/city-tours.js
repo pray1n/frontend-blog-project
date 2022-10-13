@@ -9,7 +9,7 @@ export default function CityToursBlogs({cityToursBlogs}) {
     } 
     const li_cityToursBlogs = cityToursBlogs.map((blog) => {
         
-        const blog_to = "/city-tours/" + blog.id;
+        const blog_to = "/frontend-blog-project/city-tours/" + blog.id;
         return (
             <section className="preview" key={blog.id}>
                 <h4>{blog.title}</h4>

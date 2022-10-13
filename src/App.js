@@ -85,7 +85,7 @@ function App() {
                 <main>
                     <Routes>
                         <Route
-                            path="/frontend-blog-project/all-inclusive"
+                            path='/frontend-blog-project/all-inclusive'
                             element={
                                 <AllInclusiveBlogs
                                     allInclusiveBlogs={data.allInclusiveBlogs}
@@ -93,11 +93,11 @@ function App() {
                             }
                         />
                         <Route
-                            path="/frontend-blog-project/frontend-blog-project/all-inclusive/:id"
+                            path='/frontend-blog-project/all-inclusive/:id'
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/frontend-blog-project/beach-holidays"
+                            path='/frontend-blog-project/beach-holidays'
                             element={
                                 <BeachHolidaysBlogs
                                     holidaysBlogs={data.holidaysBlogs}
@@ -105,11 +105,11 @@ function App() {
                             }
                         />
                         <Route
-                            path="/frontend-blog-project/beach-holidays/:id"
+                            path='/frontend-blog-project/beach-holidays/:id'
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/frontend-blog-project/city-tours"
+                            path='/frontend-blog-project/city-tours'
                             element={
                                 <CityToursBlogs
                                     cityToursBlogs={data.cityToursBlogs}
@@ -117,7 +117,7 @@ function App() {
                             }
                         />
                         <Route
-                            path="/frontend-blog-project/city-tours/:id"
+                            path='/frontend-blog-project/city-tours/:id'
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
@@ -125,15 +125,15 @@ function App() {
                             element={<Blogs blogs={data.nonspecialblogs} />}
                         />
                         <Route
-                            path="/frontend-blog-project/:id"
+                            path='/frontend-blog-project/:id'
                             element={<Blogdetail blogs={data.blogs} />}
                         />
                         <Route
-                            path="/frontend-blog-project/newblog"
+                            path='/frontend-blog-project/newblog'
                             element={<NewBlog addBlog={addBlog} />}
                         />
                         <Route
-                            path="/frontend-blog-project/login"
+                            path='/frontend-blog-project/login'
                             element={<NewBlog addBlog={addBlog} />}
                         />
                     </Routes>
